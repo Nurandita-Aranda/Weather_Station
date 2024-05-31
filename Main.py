@@ -14,7 +14,7 @@ def connection(name, type):
             'user': 'root',
             'password': '',
             'host': '192.168.144.41',
-            'ports': '80',
+            'port': '80',  # Corrected the key from 'ports' to 'port'
             'database': 'esp_log'
         }
         try:
