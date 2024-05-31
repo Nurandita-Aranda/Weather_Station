@@ -10,7 +10,7 @@ st.markdown("<h1 style='text-align: center; color: raisin black;'>Weather Statio
 conn = st.connection('esp_log', type='sql')
 
 # Perform query.
-df = conn.query('SELECT Humidity, Temperature, LDR_Value from mytable;', ttl=600)
+df = conn.query('SELECT Humidity, Temperature, LDR_Value from log;', ttl=600)
 
 # Print results.
 for row in df.itertuples():
