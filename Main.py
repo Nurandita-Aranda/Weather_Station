@@ -18,7 +18,7 @@ def connection(name, type):
 
 st.connection = connection
 conn = st.connection('esp_log', type='sql')
-df = conn.query('SELECT Humidity, Temperature, LDR_Value  from log', ttl=600)
+df = connection.query('SELECT Humidity, Temperature, LDR_Value  from log', ttl=600)
 
 for row in df.itertuples():
     st.write(f"{Humidity}, {Temperature}, {row.pet}:")
