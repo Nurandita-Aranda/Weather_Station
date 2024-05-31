@@ -13,7 +13,8 @@ def connection(name, type):
         db_config = {
             'user': 'root',
             'password': '',
-            'host': 'localhost',
+            'host': '192.168.144.41',
+            'ports': '80',
             'database': 'esp_log'
         }
         try:
