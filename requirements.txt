@@ -1,4 +1,5 @@
 streamlit==1.21.0
 mysql-connector-python==8.4.0
+mysqlclient==2.2.4
 SQLAlchemy==1.4.39
 pandas==1.5.3
